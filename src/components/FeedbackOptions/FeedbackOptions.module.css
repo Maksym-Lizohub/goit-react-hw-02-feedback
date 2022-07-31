@@ -1,0 +1,18 @@
+.list {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.button {
+  cursor: pointer;
+  background: none;
+  border-radius: 6px;
+}
+.button:hover {
+  background-color: blue;
+  color: white;
+}
+.item:not(:last-child) {
+  margin-right: 20px;
+}
