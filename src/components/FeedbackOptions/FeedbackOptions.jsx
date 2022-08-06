@@ -4,10 +4,15 @@ import s from './FeedbackOptions.module.css';
 
 const FeedbackOptions = ({ options, onLeaveFeedback }) => {
   return (
-    <ul onClick={onLeaveFeedback} className={s.list}>
+    <ul className={s.list}>
       {options.map(option => (
         <li key={option} className={s.item}>
-          <button type="button" name={option} className={s.button}>
+          <button
+            type="button"
+            onClick={onLeaveFeedback}
+            name={option}
+            className={s.button}
+          >
             {option.toUpperCase()}
           </button>
         </li>
